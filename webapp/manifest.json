@@ -1,0 +1,49 @@
+{
+    "sap.ui5": {
+      "rootView": {
+        "viewName": "myapp.view.Main",
+        "type": "XML",
+        "async": true,
+        "id": "app"
+      },
+      "routing": {
+        "config": {
+          "routerClass": "sap.m.routing.Router",
+          "viewType": "XML",
+          "viewPath": "myapp.view",
+          "controlId": "app",
+          "controlAggregation": "pages",
+          "async": true
+        },
+        "routes": [
+          {
+            "pattern": "",
+            "name": "main",
+            "target": "main"
+          },
+          {
+            "pattern": "addProject",
+            "name": "addProject",
+            "target": "addProject"
+          },
+          {
+            "pattern": "projectList",
+            "name": "projectList",
+            "target": "projectList"
+          }
+        ],
+        "targets": {
+          "main": {
+            "viewName": "Main"
+          },
+          "addProject": {
+            "viewName": "AddProject"
+          },
+          "projectList": {
+            "viewName": "ProjectList"
+          }
+        }
+      }
+    }
+  }
+  

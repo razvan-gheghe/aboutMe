@@ -1,0 +1,47 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="myapp.controller.AddProject">
+
+  <Page title="Add Project">
+    <content>
+      <VBox>
+        <Label text="Project Name" />
+        <Input value="{newProject>/newProject/name}" placeholder="Enter project name" />
+
+        <Label text="Description" />
+        <Input value="{newProject>/newProject/description}" placeholder="Enter project description" />
+
+        <Label text="Start Date" />
+        <DatePicker value="{newProject>/newProject/startDate}" displayFormat="yyyy-MM-dd" />
+
+        <Button text="Save Project" press="onSaveProject" />
+        <Button text="Back" press="onNavBack" />
+
+        <!-- Tabel pentru afișarea proiectelor salvate -->
+        <Table items="{projects>/projects}">
+          <columns>
+            <Column>
+              <Text text="Project Name" />
+            </Column>
+            <Column>
+              <Text text="Description" />
+            </Column>
+            <Column>
+              <Text text="Start Date" />
+            </Column>
+          </columns>
+          <items>
+            <ColumnListItem>
+              <cells>
+                <Text text="{projects>name}" />
+                <Text text="{projects>description}" />
+                <Text text="{projects>startDate}" />
+              </cells>
+            </ColumnListItem>
+          </items>
+        </Table>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

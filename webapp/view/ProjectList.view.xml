@@ -1,0 +1,31 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="myapp.controller.ProjectList">
+  <Page title="Projects I worked on" showNavButton="true" navButtonPress="onNavBack">
+    <content>
+      <Table inset="false" items="{projects>/projects}">
+        <columns>
+          <Column>
+            <Text text="Project Name" />
+          </Column>
+          <Column>
+            <Text text="Project Description" />
+          </Column>
+          <Column>
+            <Text text="Technologies" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text text="{projects>name}" />
+              <Text text="{projects>description}" />
+              <Text text="{projects>technologies}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+    </content>
+  </Page>
+</mvc:View>

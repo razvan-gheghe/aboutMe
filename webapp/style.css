@@ -1,0 +1,109 @@
+/* style.css */
+
+/* Align the VBox containing name and profession to center */
+.aboutMeVBox {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the name and profession labels */
+  .nameLabel {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .professionLabel {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the section panels for Education and Courses */
+  .sectionPanel {
+    margin-top: 20px;
+  }
+  
+  .sectionContent {
+    padding: 10px 20px;
+  }
+  
+  /* Center the Add Project button and add some spacing */
+  .addProjectButton {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* style.css */
+
+/* style.css */
+
+/* Background for the Carousel */
+.sapMCrsl {
+    background-color: #e3f2fd; /* Light blue background */
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Styling for each image in the Carousel */
+  .sapMCrslItem {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  /* Background for the About Me section */
+  .aboutMeVBox {
+    background-color: #bbdefb; /* Light sky blue background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Name and profession styling */
+  .nameLabel {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1565c0; /* Darker blue for name */
+  }
+  
+  .professionLabel {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1565c0;
+  }
+  
+  /* Background for the Education and Courses sections */
+  .sectionPanel {
+    margin-top: 20px;
+    background-color: #e3f2fd; /* Light blue background for consistency */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .sectionContent {
+    padding: 10px 20px;
+  }
+  
+  /* Center the Add Project button and add some spacing */
+  .addProjectButton {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1565c0; /* Dark blue background for button */
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  /* Styling for the text inside panels */
+  .panelLabel {
+    color: #0d47a1; /* Deep blue for a professional look */
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  
+  
+  

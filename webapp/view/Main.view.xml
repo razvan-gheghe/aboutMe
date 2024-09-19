@@ -1,0 +1,56 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="myapp.controller.Main">
+
+  <App id="app">
+    <!-- Pagina principală: Despre mine -->
+    <Page title="About Me" id="aboutMePage">
+      <content>
+        <!-- Carousel with images -->  
+        <Carousel height="300px" loop="true">
+          <pages>
+            <Image src="images/COSMOS.jpg" alt="Image 1" />
+            <Image src="images/BERLIN.jpg" alt="Image 2" />
+            <Image src="images/MUNICH.jpg" alt="Image 3" />
+          </pages>
+        </Carousel>
+
+          <!-- HBox pentru butoane, ambele centrate pe aceeași linie -->
+        <HBox justifyContent="Center">
+                 <!-- Buton pentru navigare la pagina de adăugare proiecte -->
+              <Button text="Go to Add Project" press="onNavigateToAddProject" class="addProjectButton" />
+              <Button text="My Project List" press="onNavigateToProjectList" class="addProjectButton"/>
+        </HBox>
+
+        <VBox
+          alignItems="Center"
+          justifyContent="Center"
+          class="aboutMeVBox">
+          <Label text="Name: Răzvan Gheghe" class="nameLabel" />
+          <Label text="Profession: Software Developer" class="professionLabel" />
+        </VBox>
+
+        <!-- Secțiune expandabilă pentru Educație -->
+        <Panel headerText="Education" expandable="true" expanded="false" class="sectionPanel">
+          <VBox class="sectionContent">
+            <Label text="Technical University of Cluj-Napoca:"/>
+            <Label text="Bachelor's Degree in Civil Engineering, 2013" />
+            <Label text="Master's Degree in Geotechnical Engineering, 2015" />
+            <Label text="Highschool: Diploma de Bacalaureat - Matematica-Informatica bilingv Romana-Germana" />
+          </VBox>
+        </Panel>
+
+        <!-- Secțiune expandabilă pentru Cursuri -->
+        <Panel headerText="Courses" expandable="true" expanded="false" class="sectionPanel">
+          <VBox class="sectionContent">
+            <Label text="Google Cybersecurity - Coursera, 2022" />
+            <Label text="Node JS - Aries Transilvania, 2020" />
+            <Label text="System Conversion to SAP S/4HANA - SAP, 2019" />
+            <Label text="Introducere in web development - FastTrackIT, 2018" />
+          </VBox>
+        </Panel>
+      </content>
+    </Page>
+  </App>
+</mvc:View>
